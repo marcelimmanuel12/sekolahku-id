@@ -1,0 +1,11 @@
+SekolahKu.id V4 — Perbaikan error blank page
+
+File diubah: src/components/ClassroomMeeting.jsx
+Penyebab: lucide-react tidak mengekspor ikon ClosedCaption.
+Perbaikan: mengganti 5 penggunaan ClosedCaption menjadi Captions, termasuk import dan komponen meeting.
+
+Jika memperbaiki proyek lama tanpa ZIP, buka Terminal di direktori sekolahku-id lalu jalankan:
+  sed -i "" "s/ClosedCaption/Captions/g" src/components/ClassroomMeeting.jsx
+
+Jalankan npm install (jika belum) dan npm run dev, lalu buka URL yang tampil.
+Perubahan ini tidak mengganti implementasi video conference/absensi atau fitur lainnya.

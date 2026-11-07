@@ -1,0 +1,28 @@
+{
+  "name": "sekolahku-id",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server/dev.mjs",
+    "dev:frontend": "vite --host 0.0.0.0",
+    "server": "node server/server.mjs",
+    "build": "vite build",
+    "start": "node server/server.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:server": "node server/tests/smoke.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "face-api.js": "^0.22.2",
+    "react-dom": "^19.1.0",
+    "lucide-react": "^0.468.0",
+    "recharts": "^2.15.3",
+    "pptxgenjs": "^3.12.0",
+    "xlsx": "^0.18.5",
+    "jspdf": "^2.5.2"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
